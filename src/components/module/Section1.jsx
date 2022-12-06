@@ -2,13 +2,47 @@ import React, { useState } from 'react'
 
 const Section1 = () => {
     const [ range, setRange ] = useState(0)
+    // const [ usStock, setUsStock ] = (0);
+    const [ stocks, setStocks ] = useState({
+        usStock: 0,
+        foreignStock: 0,
+        emergingMarket: 0,
+        dividendStock: 0,
+        municipalBond: 0
+    })
+    // const {  foreignStock, emergingMarket, dividendStock, municipalBond } = stocks
+
+    const handleUsStock = () => {
+        switch(stocks) {
+            case stocks.usStock:
+              if(range >= 20 ) {
+                setStocks(stocks.usStock += 18 )
+              }
+              break;
+            case stocks.foreignStock:
+              
+              break;
+            case stocks.emergingMarket:
+              
+              break;
+            case stocks.dividendStock:
+              
+              break;
+            case stocks.municipalBond:
+              
+              break;
+            
+            default:
+              // code block
+          }
+        // setStocks(e.target.value)
+    }
 
     const onChange = e => {
-        if(range === 0) {
-            setRange(0)
-        }else {
-            setRange(range)
+        if(range >= 0 || range < 100) {
+            setRange(e.target.value)
         }
+        handleUsStock();
     }
   return (
     <div>
@@ -18,14 +52,13 @@ const Section1 = () => {
                     <div className="w-[683px] md:w-[300px] flex-grow-0 flex-shrink-0 flex-basis-0 md:flex-basis-auto">
                         <form className="rounded-lg bg-white p-6 w-[310px] xs:w-[345px] md:w-[448px] space-y-4">
                             <div className="flex justify-between">
-                                <div className="copy-body font-bold">Risk score: {"  "} {range}</div>
+                                <div className="copy-body font-bold">Risk score: {"  "} {range} %</div>
                                 <div className="copy-body-sm">Example portfolio</div>
                             </div>
                             <input 
                                 type="range" 
                                 style={{transform:"scale(1)", cursor:"pointer"}} 
                                 className="h-1.5 w-full rounded-full bg-gradient-to-r from-ambient-orange to-lavender "
-                                // onChange={(e) => {setRange(e.targe.value)}} 
                                 onChange={onChange}
                             />
                         </form>
@@ -40,7 +73,7 @@ const Section1 = () => {
                             </button>
                         </div>
                         <div className="col-span-7 md:col-span-8 -mb-px" style={{transformOrigin: "50% 50% 0px"}}>
-                            <div className="w-8 text-white border-lavender border px-4 py-2 transition min-w-[64px]" style={{ width:"calc((0.45 / var(--max-allocation)) * 100%)", backgroundColor:"#230B59" }}>45{"  "}%</div>
+                            <div className="w-8 text-white border-lavender border px-4 py-2 transition min-w-[64px]" style={{ width:"calc((0.45 / var(--max-allocation)) * 100%)", backgroundColor:"#230B59" }}>{ stocks.usStock } %</div>
                         </div>
                         <div className="col-span-5 md:col-span-4 pr-4 flex items-center" style={{transformOrigin: "50% 50% 0px "}}>
                             <span className="truncate overflow-ellipsis">Foreign Stocks</span>
