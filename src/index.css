@@ -7,11 +7,31 @@
     --tw-gradient-stops: #db7208 0.03%,#40bb7d 73.55%,#cb14ac 102.86%;
     background-image: linear-gradient(to right,var(--tw-gradient-stops));
 }
-
+.button_primary {
+    background: #230b59;
+}
+.button_primary:hover {
+    background: blue;
+}
 .copy-body {
-    /* font-family: Calibre,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
+    font-family: Calibre,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     font-size: 18px;
     line-height: 1.2;
+}
+
+.copy-h1-alt {
+    font-family: GT Alpina,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    font-size: 40px;
+    line-height: .9;
+    letter-spacing: -.05em;
+    font-weight: 100;
+}
+
+.copy-h1 {
+    font-size: 42.2px;
+    line-height: .9;
+    letter-spacing: -.03em;
+    font-weight: 700;
 }
 
 .text-eggplant {

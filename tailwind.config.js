@@ -26,9 +26,7 @@ module.exports = {
         
     },
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/src/assests/foneInvestmentApp.jpg)",
-      }
+      
     },
   },
   plugins: [],

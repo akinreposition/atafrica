@@ -8,10 +8,10 @@ const Navigation = () => {
             <div className='mx-auto px-0 md:px-12 lg:px-16 max-w-[2024px]'>
                 <div className='grid grid-cols-2 item-center justify-between h-24'>
                    <a href='/' className='z-10 flex relative font-medium text-eggplant'>
-                    <img src={ATAfricaLogo} width="100px" height="26px" alt="ATAfrica_logo" loading="eager"/>
+                    <img src={ATAfricaLogo} className="w-32"  alt="ATAfrica_logo" loading="eager"/>
                    </a>
-                    <nav className="flex items-center space-x-6" aria-label='Main'>
-                        <a href='/#' role="button" className="flex font-medium relative text-eggplant">
+                    <nav className="flex items-center space-x-4">
+                        <a href='/#'  className="flex font-medium relative text-eggplant">
                             Invest
                             <svg fill="none" viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg" data-testid="chevron-down" className="mt-3 ml-1 h-1.5"><path d="M.47 1.624A.754.754 0 111.58.602l2.552 2.772a.5.5 0 00.736 0L7.42.602a.754.754 0 111.11 1.022L5.236 5.201a1 1 0 01-1.472 0L.47 1.624z" fill="currentColor" fillRule="evenodd"></path></svg>
                             <div className="absolute left-0 right-0 h-0.5 -bottom-0.5 transition-all w-0 group-hover:w-full bg-eggplant"></div>

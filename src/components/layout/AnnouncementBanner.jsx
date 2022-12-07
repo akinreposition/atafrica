@@ -3,7 +3,7 @@ import React from 'react'
 
 const AnnouncementBanner = () => {
   return (
-    <div id="announce-banner" className='announcement_banner_gradient mx-auto mt-5 xl:justify-evenly xl:rounded-md xl:w-11/12'>
+    <div id="announce-banner" className='announcement_banner_gradient mx-auto mt-5 xl:justify-evenly xl:rounded-md lg:w-11/12 xl:max-w-[2024px]'>
       <div className="hidden xl:block mx-auto py-4 px-0 md:px-12 lg:px-16 max-w-[2024px]">
         <div className="filter-shadow-short grid grid-cols-[1fr,max-content,1fr] text-center justify-between py-4 px-5 rounded text-white">
           
